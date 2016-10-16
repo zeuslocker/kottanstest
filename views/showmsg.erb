@@ -1,0 +1,13 @@
+<div class="container">
+    <div style="text-align: center">
+<h1>Your message</h1>
+<h3><%= @decrMsgBody %></h3>
+<p><br>
+<%if @message.timer == true %>
+Message will be deleted afther <%= Time.at((@message.expires_at - Time.now).to_i).strftime("%M minutes and %S seconds")%>
+<%else%>
+This message will be deleted after you refresh the page or try open it again!
+<%@message.destroy%>
+<%end%>
+</div>
+</div>

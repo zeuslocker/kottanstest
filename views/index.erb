@@ -7,8 +7,9 @@
  <div class="form-group">
    <label for="bodyTextarea">Message text</label>
    <br>
-   <textarea id="bodyTextarea" name="message[body]" class="form-control" rows="10"><%= @message.body %></textarea>
+   <textarea id="bodyTextarea" required name="message[body]" class="form-control" rows="10"><%= @message.body %></textarea>
    <br>
+   
   <div class="form-group">
         <input type="checkbox" id="timerCheckBox" class="form-check-input" name="message[timer]" value="1"> <label for="timerCheckBox">Delete after 1 hour</label>
       </div>

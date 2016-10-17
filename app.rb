@@ -40,8 +40,6 @@ end
 end
 
 post "/messages" do
-    #render json: params[:message][:body]
-   # render json: params[:timer]
       g = Guid.new
         @message = Message.new(body: params[:message][:body], timer: params[:message][:timer])
         encrMsg = AES.encrypt(@message.body, KEY)

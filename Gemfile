@@ -8,7 +8,6 @@ gem 'whenever'
 gem 'bundler'
 gem 'clipboard-rails'
 gem 'jquery-turbolinks'
-gem "sqlite3"
 gem 'rails_12factor'
 gem "rake"
 gem 'aes', '~> 0.5.0'
@@ -18,3 +17,8 @@ gem 'sinatra-redirect-with-flash'
 gem 'sinatra-captcha'
 gem 'shotgun'
 gem 'sinatra-bootstrap', :require => 'sinatra/bootstrap'
+
+group :test do
+  gem "rspec"
+  gem "rack-test"
+end

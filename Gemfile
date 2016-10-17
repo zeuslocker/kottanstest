@@ -17,8 +17,10 @@ gem 'sinatra-redirect-with-flash'
 gem 'sinatra-captcha'
 gem 'shotgun'
 gem 'sinatra-bootstrap', :require => 'sinatra/bootstrap'
-
+gem 'pg'
 group :test do
   gem "rspec"
   gem "rack-test"
 end
+
+ruby "2.3.1"

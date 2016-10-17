@@ -52,6 +52,7 @@ GEM
     minitest (5.9.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.19.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -131,6 +132,7 @@ DEPENDENCIES
   clipboard-rails
   guid (~> 0.1.1)
   jquery-turbolinks
+  pg
   rack-test
   rails_12factor
   rake

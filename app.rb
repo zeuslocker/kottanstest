@@ -7,6 +7,8 @@ set :database, "sqlite3:myblogdb.sqlite3"
 
 KEY = 'dfgert45fg4thvb6gh88989u64ggh'
 class Message < ActiveRecord::Base
+    validates :body, presence: true
+    validates :body, length: {minimum: 1}
    has_one :messagelink
     scope :actual, -> { where("expires_at > CURRENT_TIMESTAMP") }
    def to_param

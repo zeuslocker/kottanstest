@@ -7,6 +7,7 @@
 #
 # set :output, "/path/to/my/cron_log.log"
 #
+require './app.rb'
 every 1.hour do 
     MessagesToDel = Message.where("expires_at < CURRENT_TIMESTAMP")
     MessagesToDel.destroy_all
